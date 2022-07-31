@@ -1,9 +1,10 @@
 import React from "react";
 import PLACESSpace from "./PLACESSpace";
+import "./PLACESList.css";
 
 function PLACESList() {
   return (
-    <div>
+    <div className="PLACESList">
       <PLACESSpace
         name="Buckingham Fountain"
         address="301 S Columbus Dr, Chicago, IL 60605"

@@ -1,0 +1,9 @@
+.PLACESSpace {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .PLACESSpace > img {
+    width: 100%;
+    height: auto;
+  }
