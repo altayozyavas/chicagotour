@@ -1,32 +1,23 @@
 import React from "react";
 import PLACESSpace from "./PLACESSpace";
 import "./PLACESList.css";
+import data from "./places-data.json";
 
 function PLACESList() {
-  return (
-    <div className="PLACESList">
+  const places = data.map(( {title, address, images, hours }) => {
+    // const {title, address, images } = place;
+    return (
       <PLACESSpace
-        name="Buckingham Fountain"
-        address="301 S Columbus Dr, Chicago, IL 60605"
-        image="buckingham-fountain.png"
+        key={title}
+        name={title}
+        address={address}
+        image={images[0]}
+        hours={hours}
       />
-      <PLACESSpace
-        name="Chicago Riverwalk"
-        address="213 River Ave"
-        image="chicago-riverwalk.jpeg"
-      />
-      <PLACESSpace
-        name="Lincoln Park Zoo"
-        address="2001 N Clark St, Chicago, IL 60614"
-        image="lincoln-zoo.jpeg"
-      />
-      <PLACESSpace
-        name="Metric Coffee Co."
-        address="2021 W Fulton St suite k-101b, Chicago, IL 60612"
-        image="metric-coffee.jpeg"
-      />
-    </div>
-  );
+    );
+  });
+
+  return <div className="PLACESList">{places}</div>;
 }
 
 export default PLACESList;
