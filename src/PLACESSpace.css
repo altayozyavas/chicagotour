@@ -1,14 +1,27 @@
 .PLACESSpace {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .PLACESSpace > img {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  text-align: center;
+}
 
-  .hours {
-    font-style: italic;
-   font-weight: 800;
-  }
+.attraction-names * {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.attraction-names:hover {
+  transition: 1s;
+  text-decoration: underline;
+  font-size: 110%;
+}
+
+.PLACESSpace > img {
+  width: 100%;
+  height: auto;
+}
+
+.hours {
+  font-style: italic;
+  font-weight: 800;
+}

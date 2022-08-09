@@ -7,7 +7,7 @@ function PLACESList() {
   const places = data.map(( {title, address, images, hours }, idx) => {
     return (
       <PLACESSpace
-        id={idx+1}
+        id={idx}
         key={title}
         name={title}
         address={address}

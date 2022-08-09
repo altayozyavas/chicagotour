@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import data from "../places-data.json";
+import "../PLACESDetails.css";
 
 const PLACESDetails = (props) => {
   // get id from url params
@@ -8,17 +9,31 @@ const PLACESDetails = (props) => {
   const { title, desc, address, geo, images, features, hours } = data[id];
   // return details
   return (
-    <div>
+    <div className="PLACESDetails">
       <div>
         <img src={`${process.env.PUBLIC_URL}/images/${images[0]}`} alt="" />
       </div>
       <div>
         <h1>{title}</h1>
-        <p>{desc}</p>
-        <p>{hours}</p>
-        <p>{features}</p>
         <p>
-            Latitude: {geo.lat} / Longitude: {geo.lon}
+          <strong>Description: </strong>
+          {desc}
+        </p>
+        <p>
+          <strong>Address: </strong>
+          {address}
+        </p>
+        <p>
+          <strong>Hours: </strong>
+          {hours}
+        </p>
+        <p>
+          <strong>Amenities: </strong>
+          {features}
+        </p>
+        <p>
+          <strong>Description: </strong>Latitude: {geo.lat} / Longitude:{" "}
+          {geo.lon}
         </p>
       </div>
     </div>
