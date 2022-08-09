@@ -1,12 +1,20 @@
-.Title {
+.Title, .nav-link {
   box-sizing: border-box;
   width: 100%;
-  padding: 1em;
-  margin-bottom: 2em;
+  padding: 0.25em;
+  /* margin-bottom: 2em; */
   background-color: rgb(0, 0, 0);
   color: #fff;
+
+  display: inline-block;
 }
 
+.Title .nav-link-active {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5 1em;
+  font-weight: bold;
+}
 .Title-Subtitle {
   color: rgba(255, 255, 255, 0.75);
 }

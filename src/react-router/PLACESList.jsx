@@ -1,13 +1,13 @@
 import React from "react";
 import PLACESSpace from "./PLACESSpace";
-import "./PLACESList.css";
-import data from "./places-data.json";
+import "../PLACESList.css";
+import data from "../places-data.json";
 
 function PLACESList() {
-  const places = data.map(( {title, address, images, hours }) => {
-    // const {title, address, images } = place;
+  const places = data.map(( {title, address, images, hours }, idx) => {
     return (
       <PLACESSpace
+        id={idx+1}
         key={title}
         name={title}
         address={address}
