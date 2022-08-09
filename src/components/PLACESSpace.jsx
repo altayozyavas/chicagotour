@@ -1,6 +1,6 @@
 // src/PLACESSpace.js
 import { Link } from 'react-router-dom';
-import "../PLACESSpace.css";
+import "../styles/PLACESSpace.css";
 
 function PLACESSpace(props) {
   const { name, image, address, hours, id } = props;

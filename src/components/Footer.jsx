@@ -1,4 +1,5 @@
-import "../Footer.css";
+import "../styles/Footer.css";
+import { Link } from "react-router-dom"
 
 function getFullYear() {
     return new Date().getFullYear();
@@ -7,7 +8,7 @@ function getFullYear() {
 function Footer() {
     return (
         <footer className="Footer">
-            Altay Ozyavas copyright {getFullYear()}
+            <Link to="author">Altay Ozyavas Copyright {getFullYear()}</Link>
         </footer>
     )
 }

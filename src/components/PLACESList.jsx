@@ -1,6 +1,6 @@
 import React from "react";
 import PLACESSpace from "./PLACESSpace";
-import "../PLACESList.css";
+import "../styles/PLACESList.css";
 import data from "../places-data.json";
 
 function PLACESList() {

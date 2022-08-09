@@ -1,0 +1,11 @@
+.Footer * {
+    text-decoration: none;
+    color: rgb(114, 109, 109);
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.Footer:hover * {
+    cursor: pointer;
+    color: black;
+}

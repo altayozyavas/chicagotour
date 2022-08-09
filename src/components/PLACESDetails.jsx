@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import data from "../places-data.json";
-import "../PLACESDetails.css";
+import "../styles/PLACESDetails.css";
 
 const PLACESDetails = (props) => {
   // get id from url params

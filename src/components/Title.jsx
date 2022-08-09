@@ -1,11 +1,11 @@
 import React from "react";
-import "../Title.css";
+import "../styles/Title.css";
 import {NavLink} from 'react-router-dom';
 
 function Title() {
   return (
     <div className="Title">
-      <h1>CHICAGOTOUR</h1>
+      <NavLink to="/"><h1>CHICAGOTOUR</h1></NavLink>
       <div className="Title-Subtitle">Chicago Places to Visit</div>
 
       <div>
